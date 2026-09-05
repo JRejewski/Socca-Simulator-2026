@@ -20,6 +20,15 @@ qt_add_executable(Socca_Simulator
 
     src/druzyny/druzyna.h src/druzyny/druzyna.cpp
     src/mecze/mecz.h src/mecze/mecz.cpp
+
+    src/rozgrywki/trybrozgrywki.h src/rozgrywki/trybrozgrywki.cpp
+    src/rozgrywki/szybkimecz.h src/rozgrywki/szybkimecz.cpp
+    src/rozgrywki/liga.h src/rozgrywki/liga.cpp
+    src/rozgrywki/puchar.h src/rozgrywki/puchar.cpp
+
+    src/turniej/drabinka.h src/turniej/drabinka.cpp
+
+    src/gra/menedzergry.h src/gra/menedzergry.cpp
 )
 
 target_link_libraries(Socca_Simulator
