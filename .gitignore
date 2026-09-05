@@ -1,0 +1,31 @@
+# Qt / CMake build directories
+build/
+build-*/
+cmake-build-*/
+
+# Qt Creator
+*.user
+*.user.*
+*.qtc_clangd
+.qtc/
+
+# Compiled files
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Debug / release
+debug/
+release/
+
+# Generated files
+moc_*
+qrc_*
+ui_*
+
+# OS
+.DS_Store
+Thumbs.db
