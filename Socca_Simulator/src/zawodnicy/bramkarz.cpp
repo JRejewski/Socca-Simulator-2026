@@ -51,3 +51,9 @@ int CBramkarz::getParady() const
 {
     return parady;
 }
+
+double CBramkarz::obliczSileBramkarza() const
+{
+    double silaObrony = (pozycjonowanie + inteligencja + parady + getFizycznosc()) / 4.0;
+    return silaObrony;
+}

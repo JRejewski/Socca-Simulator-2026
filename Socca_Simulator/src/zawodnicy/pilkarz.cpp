@@ -50,3 +50,15 @@ int CPilkarz::getDefensywa() const
 {
     return defensywa;
 }
+
+double CPilkarz::obliczSileAtaku() const
+{
+    double silaAtak = (getCelnosc() + szybkosc + technika) / 3.0;
+    return silaAtak;
+}
+
+double CPilkarz::obliczSileObrony() const
+{
+    double silaObrona = (getFizycznosc() + getCharyzma() + defensywa) / 3.0;
+    return silaObrona;
+}

@@ -12,6 +12,8 @@ public:
     int getInteligencja() const;
     int getParady() const;
 
+    double obliczSileBramkarza() const;
+
 private:
     int pozycjonowanie, inteligencja, parady;
 };

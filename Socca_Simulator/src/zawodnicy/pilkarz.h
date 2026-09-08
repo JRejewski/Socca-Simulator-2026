@@ -13,6 +13,9 @@ public:
     int getTechnika() const;
     int getDefensywa() const;
 
+    double obliczSileAtaku() const;
+    double obliczSileObrony() const;
+
 private:
     int szybkosc, technika, defensywa;
 };
