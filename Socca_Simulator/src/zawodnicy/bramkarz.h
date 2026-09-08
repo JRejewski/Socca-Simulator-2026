@@ -1,10 +1,19 @@
 #ifndef BRAMKARZ_H
 #define BRAMKARZ_H
 
-class Bramkarz
+#include "zawodnik.h"
+
+class CBramkarz : public CZawodnik
 {
 public:
-    Bramkarz();
+    CBramkarz(std::string imie, std::string nazwisko, int celnosc, int fizycznosc, int charyzma, int pozycjonowanie, int inteligencja, int parady);
+
+    int getPozycjonowanie() const;
+    int getInteligencja() const;
+    int getParady() const;
+
+private:
+    int pozycjonowanie, inteligencja, parady;
 };
 
 #endif // BRAMKARZ_H

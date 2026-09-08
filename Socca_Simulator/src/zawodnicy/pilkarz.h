@@ -1,10 +1,20 @@
 #ifndef PILKARZ_H
 #define PILKARZ_H
 
-class Pilkarz
+#include "zawodnik.h"
+
+class CPilkarz : public CZawodnik
 {
 public:
-    Pilkarz();
+    CPilkarz(std::string imie, std::string nazwisko, int celnosc, int fizycznosc, int charyzma, int szybkosc, int technika, int defensywa);
+
+
+    int getSzybkosc() const;
+    int getTechnika() const;
+    int getDefensywa() const;
+
+private:
+    int szybkosc, technika, defensywa;
 };
 
 #endif // PILKARZ_H

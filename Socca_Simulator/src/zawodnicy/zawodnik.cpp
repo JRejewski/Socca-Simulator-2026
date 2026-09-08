@@ -1,10 +1,6 @@
 #include "zawodnik.h"
 
-CZawodnik::CZawodnik(std::string imie,
-                   std::string nazwisko,
-                   int celnosc,
-                   int fizycznosc,
-                   int charyzma)
+CZawodnik::CZawodnik(std::string imie, std::string nazwisko, int celnosc, int fizycznosc, int charyzma)
     : imie{imie},
     nazwisko{nazwisko},
     celnosc{celnosc},
