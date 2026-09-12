@@ -20,7 +20,7 @@
       <item>
        <widget class="QStackedWidget" name="ekranyStackedWidget">
         <property name="currentIndex">
-         <number>1</number>
+         <number>2</number>
         </property>
         <widget class="QWidget" name="menuPage">
          <widget class="QPushButton" name="szybkiMeczButton">
@@ -34,6 +34,19 @@
           </property>
           <property name="text">
            <string>Szybki mecz</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="ligaButton">
+          <property name="geometry">
+           <rect>
+            <x>360</x>
+            <y>280</y>
+            <width>80</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Liga</string>
           </property>
          </widget>
         </widget>
@@ -80,6 +93,44 @@
            </widget>
           </item>
          </layout>
+        </widget>
+        <widget class="QWidget" name="ligaPage">
+         <widget class="QTableWidget" name="tabelaLigiWidget">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>230</y>
+            <width>471</width>
+            <height>192</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="powrotLigaButton">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>510</y>
+            <width>131</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Powrót do menu</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="nastepnyMeczButton">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>190</y>
+            <width>251</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Rozegraj następny mecz</string>
+          </property>
+         </widget>
         </widget>
        </widget>
       </item>
