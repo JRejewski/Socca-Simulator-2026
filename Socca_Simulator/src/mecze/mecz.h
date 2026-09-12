@@ -10,7 +10,7 @@ public:
 
     int getGoleGospodarzy() const;
     int getGoleGosci() const;
-    void symuluj();
+    void symuluj(unsigned int ziarno);
 
 
 private:

@@ -15,6 +15,8 @@ public:
     double obliczSileObrony() const;
     double obliczSileBramkarza() const;
 
+    std::string getNazwa() const;
+
 private:
 
     std::string reprezentacja;

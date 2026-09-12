@@ -13,7 +13,80 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="centralLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QStackedWidget" name="ekranyStackedWidget">
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="menuPage">
+         <widget class="QPushButton" name="szybkiMeczButton">
+          <property name="geometry">
+           <rect>
+            <x>360</x>
+            <y>240</y>
+            <width>80</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Szybki mecz</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="szybkiMeczPage">
+         <property name="layoutDirection">
+          <enum>Qt::LayoutDirection::LeftToRight</enum>
+         </property>
+         <layout class="QVBoxLayout" name="szybkiMeczLayout">
+          <item>
+           <widget class="QComboBox" name="gospodarzeComboBox"/>
+          </item>
+          <item>
+           <widget class="QComboBox" name="goscieComboBox">
+            <property name="currentText">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="symulujButton">
+            <property name="layoutDirection">
+             <enum>Qt::LayoutDirection::LeftToRight</enum>
+            </property>
+            <property name="text">
+             <string>Symuluj mecz</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="wynikLabel">
+            <property name="text">
+             <string>Wynik: —</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignmentFlag::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="powrotButton">
+            <property name="text">
+             <string>Powrót do menu głównego</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
@@ -23,6 +96,12 @@
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuSocca_Simulator">
+    <property name="title">
+     <string>Socca Simulator</string>
+    </property>
+   </widget>
+   <addaction name="menuSocca_Simulator"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>

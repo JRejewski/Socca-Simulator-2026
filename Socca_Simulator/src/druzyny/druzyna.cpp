@@ -33,3 +33,8 @@ double CDruzyna::obliczSileBramkarza() const
 {
     return bramkarz.obliczSileBramkarza();
 }
+
+std::string CDruzyna::getNazwa() const
+{
+    return reprezentacja;
+}

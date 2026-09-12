@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <vector>
+#include "../src/druzyny/druzyna.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -19,5 +21,12 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    void symulujMecz();
+    void pokazSzybkiMecz();
+    void pokazMenu();
+
+    std::vector<CDruzyna> druzyny;
+
+    void przygotujDruzyny();
 };
 #endif // MAINWINDOW_H
