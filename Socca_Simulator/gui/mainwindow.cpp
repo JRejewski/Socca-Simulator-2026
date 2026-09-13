@@ -9,6 +9,9 @@
 #include <QDebug>
 #include <QTableWidget>
 #include <QStringList>
+#include "../src/dane/wczytywaczdruzyn.h"
+#include <QMessageBox>
+#include <stdexcept>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -22,21 +25,25 @@ MainWindow::MainWindow(QWidget *parent)
     ui->tabelaLigiWidget->setEditTriggers(
         QAbstractItemView::NoEditTriggers);
 
-    przygotujDruzyny();
+    try
+    {
+        przygotujDruzyny();
+    }
+    catch (const std::exception& blad)
+    {
+        QMessageBox::critical(
+            this,
+            "Blad wczytywania druzyn",
+            QString::fromUtf8(blad.what()));
+
+        ui->centralwidget->setEnabled(false);
+        return;
+    }
 
     ui->tabelaLigiWidget->setRowCount(static_cast<int>(druzyny.size()));
 
     liga.emplace(druzyny);
     liga->generujTerminarz();
-
-    // unsigned int ziarno{0};
-
-    // while (liga->czySaMecze())
-    // {
-    //     liga->rozegrajNastepnyMecz(ziarno);
-    //     ++ziarno;
-    // }
-
     odswiezTabele();
 
     for (std::size_t i = 0; i < druzyny.size(); ++i)
@@ -61,6 +68,8 @@ MainWindow::MainWindow(QWidget *parent)
             this, &MainWindow::pokazLige);
     connect(ui->powrotLigaButton, &QPushButton::clicked,
             this, &MainWindow::pokazMenu);
+    connect(ui->nastepnyMeczButton, &QPushButton::clicked,
+            this, &MainWindow::rozegrajMeczLigi);
 }
 
 MainWindow::~MainWindow()
@@ -113,28 +122,8 @@ void MainWindow::pokazLige()
 
 void MainWindow::przygotujDruzyny()
 {
-    CPilkarz pilkarzPol{"Jan", "Kowalski", 60, 60, 60, 60, 60, 60};
-    CBramkarz bramkarz{"Adam", "Nowak", 80, 80, 80, 80, 80, 80};
-    std::array<CPilkarz, 5> skladPol{pilkarzPol, pilkarzPol, pilkarzPol, pilkarzPol, pilkarzPol};
-
-    CPilkarz pilkarzNiem{"Jurgen", "Klopp", 60, 60, 60, 60, 60, 60};
-    std::array<CPilkarz, 5> skladNiem{pilkarzNiem, pilkarzNiem, pilkarzNiem, pilkarzNiem, pilkarzNiem};
-
-    CPilkarz pilkarzChor{"Ivan", "Rakitic", 70, 70, 70, 70, 70, 70};
-    std::array<CPilkarz, 5> skladChor{pilkarzChor, pilkarzChor, pilkarzChor, pilkarzChor, pilkarzChor};
-
-    CPilkarz pilkarzNig{"Tymoteusz", "Jasc00lski", 84, 57, 65, 80, 67, 78};
-    std::array<CPilkarz, 5> skladNig{pilkarzNig, pilkarzNig, pilkarzNig, pilkarzNig, pilkarzNig};
-
-    CDruzyna Polska{"Polska", skladPol, bramkarz};
-    CDruzyna Niemcy{"Niemcy", skladNiem, bramkarz};
-    CDruzyna Chorwacja{"Chorwacja", skladChor, bramkarz};
-    CDruzyna Nigeria{"Nigeria", skladNig, bramkarz};
-
-    druzyny.push_back(Polska);
-    druzyny.push_back(Niemcy);
-    druzyny.push_back(Chorwacja);
-    druzyny.push_back(Nigeria);
+    CWczytywaczDruzyn wczytywacz;
+    druzyny = wczytywacz.wczytaj(":/data/druzyny.json");
 }
 
 void MainWindow::odswiezTabele()
@@ -179,4 +168,27 @@ void MainWindow::odswiezTabele()
             wiersz, 6,
             new QTableWidgetItem(QString::number(statystyki.roznicaBramek)));
     }
+}
+
+void MainWindow::rozegrajMeczLigi()
+{
+    if (!liga || !liga->czySaMecze())
+    {
+        return;
+    }
+    std::random_device zrodlo;
+    unsigned int ziarno = zrodlo();
+    liga->rozegrajNastepnyMecz(ziarno);
+    auto wynik = liga->getOstatniWynik();
+    if (wynik)
+    {
+        ui->ostatniWynikLabel->setText(
+            QString("%1  %2 : %3  %4")
+                .arg(QString::fromStdString(druzyny[wynik->gospodarze].getNazwa()))
+                .arg(wynik->goleGospodarzy)
+                .arg(wynik->goleGosci)
+                .arg(QString::fromStdString(druzyny[wynik->goscie].getNazwa())));
+    }
+    odswiezTabele();
+    ui->nastepnyMeczButton->setEnabled(liga->czySaMecze());
 }

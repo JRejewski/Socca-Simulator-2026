@@ -1,0 +1,582 @@
+{
+  "wersjaFormatu": 1,
+  "opis": "Fikcyjne sklady demonstracyjne socca. Wszystkie osoby i oceny sa wymyslone; nie przedstawiaja rzeczywistych zawodnikow ani rankingow reprezentacji. Statystyki: 1-100.",
+  "druzyny": [
+    {
+      "id": "polska",
+      "nazwa": "Polska",
+      "pilkarze": [
+        {
+          "id": "polska_p1",
+          "imie": "Adam",
+          "nazwisko": "Wolski",
+          "celnosc": 75,
+          "fizycznosc": 71,
+          "charyzma": 70,
+          "szybkosc": 74,
+          "technika": 73,
+          "defensywa": 65
+        },
+        {
+          "id": "polska_p2",
+          "imie": "Kamil",
+          "nazwisko": "Brzeski",
+          "celnosc": 68,
+          "fizycznosc": 79,
+          "charyzma": 72,
+          "szybkosc": 66,
+          "technika": 68,
+          "defensywa": 81
+        },
+        {
+          "id": "polska_p3",
+          "imie": "Marek",
+          "nazwisko": "Lisowski",
+          "celnosc": 72,
+          "fizycznosc": 74,
+          "charyzma": 74,
+          "szybkosc": 69,
+          "technika": 75,
+          "defensywa": 74
+        },
+        {
+          "id": "polska_p4",
+          "imie": "Piotr",
+          "nazwisko": "Zarecki",
+          "celnosc": 79,
+          "fizycznosc": 73,
+          "charyzma": 67,
+          "szybkosc": 71,
+          "technika": 71,
+          "defensywa": 68
+        },
+        {
+          "id": "polska_p5",
+          "imie": "Tomasz",
+          "nazwisko": "Rogowski",
+          "celnosc": 70,
+          "fizycznosc": 77,
+          "charyzma": 71,
+          "szybkosc": 68,
+          "technika": 69,
+          "defensywa": 78
+        }
+      ],
+      "bramkarz": {
+        "id": "polska_g1",
+        "imie": "Filip",
+        "nazwisko": "Borowski",
+        "celnosc": 58,
+        "fizycznosc": 79,
+        "charyzma": 76,
+        "pozycjonowanie": 81,
+        "inteligencja": 78,
+        "parady": 83
+      }
+    },
+    {
+      "id": "niemcy",
+      "nazwa": "Niemcy",
+      "pilkarze": [
+        {
+          "id": "niemcy_p1",
+          "imie": "Lukas",
+          "nazwisko": "Bergmann",
+          "celnosc": 78,
+          "fizycznosc": 76,
+          "charyzma": 76,
+          "szybkosc": 77,
+          "technika": 76,
+          "defensywa": 69
+        },
+        {
+          "id": "niemcy_p2",
+          "imie": "Felix",
+          "nazwisko": "Sommer",
+          "celnosc": 71,
+          "fizycznosc": 84,
+          "charyzma": 78,
+          "szybkosc": 69,
+          "technika": 71,
+          "defensywa": 85
+        },
+        {
+          "id": "niemcy_p3",
+          "imie": "Jonas",
+          "nazwisko": "Feld",
+          "celnosc": 75,
+          "fizycznosc": 79,
+          "charyzma": 80,
+          "szybkosc": 72,
+          "technika": 78,
+          "defensywa": 78
+        },
+        {
+          "id": "niemcy_p4",
+          "imie": "Leon",
+          "nazwisko": "Hartwig",
+          "celnosc": 82,
+          "fizycznosc": 78,
+          "charyzma": 73,
+          "szybkosc": 74,
+          "technika": 74,
+          "defensywa": 72
+        },
+        {
+          "id": "niemcy_p5",
+          "imie": "Paul",
+          "nazwisko": "Lindner",
+          "celnosc": 73,
+          "fizycznosc": 82,
+          "charyzma": 77,
+          "szybkosc": 71,
+          "technika": 72,
+          "defensywa": 82
+        }
+      ],
+      "bramkarz": {
+        "id": "niemcy_g1",
+        "imie": "Emil",
+        "nazwisko": "Falk",
+        "celnosc": 62,
+        "fizycznosc": 84,
+        "charyzma": 82,
+        "pozycjonowanie": 85,
+        "inteligencja": 83,
+        "parady": 86
+      }
+    },
+    {
+      "id": "chorwacja",
+      "nazwa": "Chorwacja",
+      "pilkarze": [
+        {
+          "id": "chorwacja_p1",
+          "imie": "Ivan",
+          "nazwisko": "Marin",
+          "celnosc": 80,
+          "fizycznosc": 67,
+          "charyzma": 75,
+          "szybkosc": 77,
+          "technika": 83,
+          "defensywa": 63
+        },
+        {
+          "id": "chorwacja_p2",
+          "imie": "Luka",
+          "nazwisko": "Vidak",
+          "celnosc": 73,
+          "fizycznosc": 75,
+          "charyzma": 77,
+          "szybkosc": 69,
+          "technika": 78,
+          "defensywa": 79
+        },
+        {
+          "id": "chorwacja_p3",
+          "imie": "Marko",
+          "nazwisko": "Vukic",
+          "celnosc": 77,
+          "fizycznosc": 70,
+          "charyzma": 79,
+          "szybkosc": 72,
+          "technika": 85,
+          "defensywa": 72
+        },
+        {
+          "id": "chorwacja_p4",
+          "imie": "Ante",
+          "nazwisko": "Boric",
+          "celnosc": 84,
+          "fizycznosc": 69,
+          "charyzma": 72,
+          "szybkosc": 74,
+          "technika": 81,
+          "defensywa": 66
+        },
+        {
+          "id": "chorwacja_p5",
+          "imie": "Dario",
+          "nazwisko": "Kovin",
+          "celnosc": 75,
+          "fizycznosc": 73,
+          "charyzma": 76,
+          "szybkosc": 71,
+          "technika": 79,
+          "defensywa": 76
+        }
+      ],
+      "bramkarz": {
+        "id": "chorwacja_g1",
+        "imie": "Niko",
+        "nazwisko": "Radic",
+        "celnosc": 65,
+        "fizycznosc": 75,
+        "charyzma": 80,
+        "pozycjonowanie": 80,
+        "inteligencja": 84,
+        "parady": 79
+      }
+    },
+    {
+      "id": "nigeria",
+      "nazwa": "Nigeria",
+      "pilkarze": [
+        {
+          "id": "nigeria_p1",
+          "imie": "Chidi",
+          "nazwisko": "Okoro",
+          "celnosc": 73,
+          "fizycznosc": 78,
+          "charyzma": 66,
+          "szybkosc": 89,
+          "technika": 76,
+          "defensywa": 60
+        },
+        {
+          "id": "nigeria_p2",
+          "imie": "Emeka",
+          "nazwisko": "Nwosu",
+          "celnosc": 66,
+          "fizycznosc": 86,
+          "charyzma": 68,
+          "szybkosc": 81,
+          "technika": 71,
+          "defensywa": 76
+        },
+        {
+          "id": "nigeria_p3",
+          "imie": "Tunde",
+          "nazwisko": "Adebayo",
+          "celnosc": 70,
+          "fizycznosc": 81,
+          "charyzma": 70,
+          "szybkosc": 84,
+          "technika": 78,
+          "defensywa": 69
+        },
+        {
+          "id": "nigeria_p4",
+          "imie": "Ike",
+          "nazwisko": "Obasi",
+          "celnosc": 77,
+          "fizycznosc": 80,
+          "charyzma": 63,
+          "szybkosc": 86,
+          "technika": 74,
+          "defensywa": 63
+        },
+        {
+          "id": "nigeria_p5",
+          "imie": "Seyi",
+          "nazwisko": "Adeyemi",
+          "celnosc": 68,
+          "fizycznosc": 84,
+          "charyzma": 67,
+          "szybkosc": 83,
+          "technika": 72,
+          "defensywa": 73
+        }
+      ],
+      "bramkarz": {
+        "id": "nigeria_g1",
+        "imie": "Obinna",
+        "nazwisko": "Eze",
+        "celnosc": 54,
+        "fizycznosc": 86,
+        "charyzma": 70,
+        "pozycjonowanie": 76,
+        "inteligencja": 73,
+        "parady": 84
+      }
+    },
+    {
+      "id": "hiszpania",
+      "nazwa": "Hiszpania",
+      "pilkarze": [
+        {
+          "id": "hiszpania_p1",
+          "imie": "Mateo",
+          "nazwisko": "Soler",
+          "celnosc": 85,
+          "fizycznosc": 63,
+          "charyzma": 77,
+          "szybkosc": 78,
+          "technika": 90,
+          "defensywa": 64
+        },
+        {
+          "id": "hiszpania_p2",
+          "imie": "Diego",
+          "nazwisko": "Navarro",
+          "celnosc": 78,
+          "fizycznosc": 71,
+          "charyzma": 79,
+          "szybkosc": 70,
+          "technika": 85,
+          "defensywa": 80
+        },
+        {
+          "id": "hiszpania_p3",
+          "imie": "Hugo",
+          "nazwisko": "Vidal",
+          "celnosc": 82,
+          "fizycznosc": 66,
+          "charyzma": 81,
+          "szybkosc": 73,
+          "technika": 92,
+          "defensywa": 73
+        },
+        {
+          "id": "hiszpania_p4",
+          "imie": "Pablo",
+          "nazwisko": "Ferrer",
+          "celnosc": 89,
+          "fizycznosc": 65,
+          "charyzma": 74,
+          "szybkosc": 75,
+          "technika": 88,
+          "defensywa": 67
+        },
+        {
+          "id": "hiszpania_p5",
+          "imie": "Alex",
+          "nazwisko": "Rivas",
+          "celnosc": 80,
+          "fizycznosc": 69,
+          "charyzma": 78,
+          "szybkosc": 72,
+          "technika": 86,
+          "defensywa": 77
+        }
+      ],
+      "bramkarz": {
+        "id": "hiszpania_g1",
+        "imie": "Bruno",
+        "nazwisko": "Molina",
+        "celnosc": 74,
+        "fizycznosc": 72,
+        "charyzma": 83,
+        "pozycjonowanie": 84,
+        "inteligencja": 87,
+        "parady": 80
+      }
+    },
+    {
+      "id": "brazylia",
+      "nazwa": "Brazylia",
+      "pilkarze": [
+        {
+          "id": "brazylia_p1",
+          "imie": "Caio",
+          "nazwisko": "Mendes",
+          "celnosc": 86,
+          "fizycznosc": 69,
+          "charyzma": 69,
+          "szybkosc": 87,
+          "technika": 91,
+          "defensywa": 57
+        },
+        {
+          "id": "brazylia_p2",
+          "imie": "Rafael",
+          "nazwisko": "Duarte",
+          "celnosc": 79,
+          "fizycznosc": 77,
+          "charyzma": 71,
+          "szybkosc": 79,
+          "technika": 86,
+          "defensywa": 73
+        },
+        {
+          "id": "brazylia_p3",
+          "imie": "Pedro",
+          "nazwisko": "Azevedo",
+          "celnosc": 83,
+          "fizycznosc": 72,
+          "charyzma": 73,
+          "szybkosc": 82,
+          "technika": 93,
+          "defensywa": 66
+        },
+        {
+          "id": "brazylia_p4",
+          "imie": "Lucas",
+          "nazwisko": "Farias",
+          "celnosc": 90,
+          "fizycznosc": 71,
+          "charyzma": 66,
+          "szybkosc": 84,
+          "technika": 89,
+          "defensywa": 60
+        },
+        {
+          "id": "brazylia_p5",
+          "imie": "Tiago",
+          "nazwisko": "Rocha",
+          "celnosc": 81,
+          "fizycznosc": 75,
+          "charyzma": 70,
+          "szybkosc": 81,
+          "technika": 87,
+          "defensywa": 70
+        }
+      ],
+      "bramkarz": {
+        "id": "brazylia_g1",
+        "imie": "Davi",
+        "nazwisko": "Monteiro",
+        "celnosc": 68,
+        "fizycznosc": 80,
+        "charyzma": 74,
+        "pozycjonowanie": 79,
+        "inteligencja": 78,
+        "parady": 87
+      }
+    },
+    {
+      "id": "francja",
+      "nazwa": "Francja",
+      "pilkarze": [
+        {
+          "id": "francja_p1",
+          "imie": "Hugo",
+          "nazwisko": "Morel",
+          "celnosc": 82,
+          "fizycznosc": 76,
+          "charyzma": 75,
+          "szybkosc": 85,
+          "technika": 85,
+          "defensywa": 70
+        },
+        {
+          "id": "francja_p2",
+          "imie": "Louis",
+          "nazwisko": "Garnier",
+          "celnosc": 75,
+          "fizycznosc": 84,
+          "charyzma": 77,
+          "szybkosc": 77,
+          "technika": 80,
+          "defensywa": 86
+        },
+        {
+          "id": "francja_p3",
+          "imie": "Theo",
+          "nazwisko": "Perrin",
+          "celnosc": 79,
+          "fizycznosc": 79,
+          "charyzma": 79,
+          "szybkosc": 80,
+          "technika": 87,
+          "defensywa": 79
+        },
+        {
+          "id": "francja_p4",
+          "imie": "Jules",
+          "nazwisko": "Laurent",
+          "celnosc": 86,
+          "fizycznosc": 78,
+          "charyzma": 72,
+          "szybkosc": 82,
+          "technika": 83,
+          "defensywa": 73
+        },
+        {
+          "id": "francja_p5",
+          "imie": "Noah",
+          "nazwisko": "Faure",
+          "celnosc": 77,
+          "fizycznosc": 82,
+          "charyzma": 76,
+          "szybkosc": 79,
+          "technika": 81,
+          "defensywa": 83
+        }
+      ],
+      "bramkarz": {
+        "id": "francja_g1",
+        "imie": "Remi",
+        "nazwisko": "Caron",
+        "celnosc": 65,
+        "fizycznosc": 83,
+        "charyzma": 81,
+        "pozycjonowanie": 87,
+        "inteligencja": 84,
+        "parady": 88
+      }
+    },
+    {
+      "id": "japonia",
+      "nazwa": "Japonia",
+      "pilkarze": [
+        {
+          "id": "japonia_p1",
+          "imie": "Haruto",
+          "nazwisko": "Mori",
+          "celnosc": 76,
+          "fizycznosc": 62,
+          "charyzma": 82,
+          "szybkosc": 86,
+          "technika": 82,
+          "defensywa": 68
+        },
+        {
+          "id": "japonia_p2",
+          "imie": "Ren",
+          "nazwisko": "Takeda",
+          "celnosc": 69,
+          "fizycznosc": 70,
+          "charyzma": 84,
+          "szybkosc": 78,
+          "technika": 77,
+          "defensywa": 84
+        },
+        {
+          "id": "japonia_p3",
+          "imie": "Sota",
+          "nazwisko": "Hayashi",
+          "celnosc": 73,
+          "fizycznosc": 65,
+          "charyzma": 86,
+          "szybkosc": 81,
+          "technika": 84,
+          "defensywa": 77
+        },
+        {
+          "id": "japonia_p4",
+          "imie": "Yuto",
+          "nazwisko": "Arai",
+          "celnosc": 80,
+          "fizycznosc": 64,
+          "charyzma": 79,
+          "szybkosc": 83,
+          "technika": 80,
+          "defensywa": 71
+        },
+        {
+          "id": "japonia_p5",
+          "imie": "Kaito",
+          "nazwisko": "Fujita",
+          "celnosc": 71,
+          "fizycznosc": 68,
+          "charyzma": 83,
+          "szybkosc": 80,
+          "technika": 78,
+          "defensywa": 81
+        }
+      ],
+      "bramkarz": {
+        "id": "japonia_g1",
+        "imie": "Daichi",
+        "nazwisko": "Ono",
+        "celnosc": 61,
+        "fizycznosc": 70,
+        "charyzma": 86,
+        "pozycjonowanie": 82,
+        "inteligencja": 86,
+        "parady": 81
+      }
+    }
+  ]
+}

@@ -19,6 +19,9 @@
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
        <widget class="QStackedWidget" name="ekranyStackedWidget">
+        <property name="layoutDirection">
+         <enum>Qt::LayoutDirection::LeftToRight</enum>
+        </property>
         <property name="currentIndex">
          <number>2</number>
         </property>
@@ -129,6 +132,22 @@
           </property>
           <property name="text">
            <string>Rozegraj następny mecz</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="ostatniWynikLabel">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>70</y>
+            <width>271</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Nie rozegrano jeszcze żadnego spotkania.</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
           </property>
          </widget>
         </widget>

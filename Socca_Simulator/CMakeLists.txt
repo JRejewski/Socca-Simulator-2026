@@ -29,6 +29,14 @@ qt_add_executable(Socca_Simulator
     src/turniej/drabinka.h src/turniej/drabinka.cpp
 
     src/gra/menedzergry.h src/gra/menedzergry.cpp
+
+    src/dane/wczytywaczdruzyn.h src/dane/wczytywaczdruzyn.cpp
+)
+
+qt_add_resources(Socca_Simulator "daneGry"
+    PREFIX "/"
+    FILES
+        data/druzyny.json
 )
 
 target_link_libraries(Socca_Simulator

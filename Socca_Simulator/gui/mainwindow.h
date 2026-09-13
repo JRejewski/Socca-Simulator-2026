@@ -28,6 +28,7 @@ private:
     void pokazMenu();
     void pokazLige();
     void odswiezTabele();
+    void rozegrajMeczLigi();
 
     std::vector<CDruzyna> druzyny;
 

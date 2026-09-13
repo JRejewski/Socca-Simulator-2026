@@ -5,6 +5,7 @@
 #include "../druzyny/druzyna.h"
 #include <utility>
 #include <cstddef>
+#include <optional>
 
 struct WierszTabeli
 {
@@ -13,6 +14,14 @@ struct WierszTabeli
     int bramkiStracone{0};
     int bramkiZdobyte{0};
     int roznicaBramek{0};
+};
+
+struct WynikMeczu
+{
+    std::size_t gospodarze{0};
+    std::size_t goscie{0};
+    int goleGospodarzy{0};
+    int goleGosci{0};
 };
 
 class CLiga
@@ -26,6 +35,7 @@ public:
     void rozegrajNastepnyMecz(unsigned int ziarno);
     WierszTabeli getStatystyki(std::size_t indeks) const;
     std::vector<std::size_t> getKolejnoscTabeli() const;
+    std::optional<WynikMeczu> getOstatniWynik() const;
 
 
 private:
@@ -34,6 +44,7 @@ private:
     std::size_t indeksMeczu{0};
     std::vector<WierszTabeli> tabela;
     bool czyWyzej(std::size_t a, std::size_t b) const;
+    std::optional<WynikMeczu> ostatniWynik;
 };
 
 #endif // LIGA_H

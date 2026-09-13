@@ -11,6 +11,7 @@ CLiga::CLiga(std::vector<CDruzyna> druzyny)
 void CLiga::generujTerminarz()
 {
     terminarz.clear();
+    ostatniWynik.reset();
     indeksMeczu = 0;
     tabela.assign(druzyny.size(), WierszTabeli{});
     for (std::size_t i = 0; i < druzyny.size(); ++i) {
@@ -41,6 +42,8 @@ void CLiga::rozegrajNastepnyMecz(unsigned int ziarno)
     mecz.symuluj(ziarno);
     int goleGospodarzy = mecz.getGoleGospodarzy();
     int goleGosci = mecz.getGoleGosci();
+    ostatniWynik = WynikMeczu{ para.first, para.second, goleGospodarzy, goleGosci };
+
     ++tabela[para.first].rozegrane;
     ++tabela[para.second].rozegrane;
     tabela[para.first].bramkiZdobyte += goleGospodarzy;
@@ -94,4 +97,9 @@ bool CLiga::czyWyzej(std::size_t a, std::size_t b) const
     }
 
     return tabela[a].roznicaBramek > tabela[b].roznicaBramek;
+}
+
+std::optional<WynikMeczu> CLiga::getOstatniWynik() const
+{
+    return ostatniWynik;
 }
