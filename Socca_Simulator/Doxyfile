@@ -1,0 +1,15 @@
+PROJECT_NAME           = "Socca Simulator"
+OUTPUT_DIRECTORY       = docs
+OUTPUT_LANGUAGE        = Polish
+INPUT                  = mainpage.dox main.cpp gui src
+FILE_PATTERNS          = *.h *.cpp
+RECURSIVE              = YES
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+JAVADOC_AUTOBRIEF      = NO
+QUIET                  = NO
+WARN_IF_UNDOCUMENTED   = YES
+USE_MDFILE_AS_MAINPAGE =

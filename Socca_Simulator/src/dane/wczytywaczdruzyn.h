@@ -6,19 +6,23 @@
 #include "../druzyny/druzyna.h"
 
 /**
- * @brief Wczytuje i sprawdza dane druzyn zapisane w JSON.
+ * @brief Wczytuje i sprawdza dane drużyn zapisane w formacie JSON.
+ *
+ * Klasa odpowiada za odczyt pliku (lub zasobu Qt) z danymi drużyn
+ * oraz zbudowanie na ich podstawie kolekcji gotowych obiektów
+ * CDruzyna, wraz z ich piłkarzami i bramkarzem.
  */
 class CWczytywaczDruzyn
 {
 public:
-    /** @brief Tworzy wczytywacz danych druzyn. */
+    /** @brief Tworzy wczytywacz danych drużyn. */
     CWczytywaczDruzyn();
 
     /**
-     * @brief Wczytuje druzyny wraz z pilkarzami i bramkarzami.
-     * @param sciezka Sciezka pliku lub zasobu Qt.
-     * @return Kolekcja poprawnie wczytanych druzyn.
-     * @throws std::runtime_error Gdy odczyt, format JSON lub dane sa niepoprawne.
+     * @brief Wczytuje drużyny wraz z piłkarzami i bramkarzami.
+     * @param sciezka Ścieżka pliku lub zasobu Qt (np. ":/data/druzyny.json").
+     * @return Kolekcja poprawnie wczytanych drużyn.
+     * @throws std::runtime_error Gdy odczyt, format JSON lub dane są niepoprawne.
      */
     std::vector<CDruzyna> wczytaj(const QString& sciezka) const;
 };

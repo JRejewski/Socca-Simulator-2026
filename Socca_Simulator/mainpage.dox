@@ -1,0 +1,37 @@
+/**
+ * @mainpage Socca Simulator - dokumentacja
+ *
+ * @section wstep Wstęp
+ * Socca Simulator to aplikacja okienkowa (Qt Widgets) symulująca
+ * rozgrywki piłkarskie. Użytkownik może rozegrać pojedynczy, szybki
+ * mecz pomiędzy dwiema wybranymi drużynami albo poprowadzić pełne
+ * rozgrywki ligowe systemem "każdy z każdym", śledząc na bieżąco
+ * tabelę ligową.
+ *
+ * @section struktura Struktura projektu
+ * - gui/ - główne okno aplikacji (MainWindow) i interfejs graficzny.
+ * - src/zawodnicy/ - klasy zawodników: CZawodnik, CPilkarz, CBramkarz.
+ * - src/druzyny/ - klasa drużyny: CDruzyna.
+ * - src/mecze/ - symulacja pojedynczego meczu: Cmecz.
+ * - src/rozgrywki/ - rozgrywki ligowe: CLiga, oraz zaślepki pod
+ *   przyszłe tryby rozgrywek: trybrozgrywki, szybkimecz, puchar.
+ * - src/turniej/ - zaślepka pod przyszłą drabinkę turniejową: drabinka.
+ * - src/gra/ - zaślepka pod przyszłego menedżera gry: menedzergry.
+ * - src/dane/ - wczytywanie danych drużyn z pliku JSON: CWczytywaczDruzyn.
+ * - data/druzyny.json - dane wejściowe drużyn dołączone jako zasób Qt.
+ *
+ * @section przeplyw Podstawowy przepływ programu
+ * Przy starcie MainWindow wczytuje drużyny z zasobu JSON za pomocą
+ * CWczytywaczDruzyn, tworzy rozgrywki ligowe (CLiga) i generuje ich
+ * terminarz. Użytkownik z poziomu menu głównego może następnie:
+ * - rozegrać szybki mecz pomiędzy dwiema wybranymi drużynami
+ *   (symulacja poprzez Cmecz),
+ * - przejść do ekranu ligi i rozgrywać kolejne mecze terminarza,
+ *   obserwując na bieżąco aktualizowaną tabelę ligową.
+ *
+ * @section uwagi Uwagi
+ * Klasy trybrozgrywki, szybkimecz, puchar, drabinka oraz menedzergry
+ * są obecnie pustymi zaślepkami przygotowanymi pod dalszą rozbudowę
+ * projektu (m.in. o tryb pucharowy) i nie są jeszcze wykorzystywane
+ * przez resztę programu.
+ */
